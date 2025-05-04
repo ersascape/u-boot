@@ -188,7 +188,7 @@ static int rad_panel_push_cmd_list(struct mipi_dsi_device *dsi)
 {
         size_t i;
         int ret = 0;
-        struct device *dev = &dsi->dev;
+        struct udevice *dev = dsi->dev;
 
         dsi->mode_flags |= MIPI_DSI_MODE_LPM;
 
