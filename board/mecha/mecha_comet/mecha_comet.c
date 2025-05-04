@@ -21,6 +21,7 @@
 //#include "../common/tcpc.h"
 #include <usb.h>
 #include <power/bq27xxx_fg.h>
+#include <mmc.h>
 #include <splash.h>
 
 
@@ -463,7 +464,7 @@ int board_late_init(void)
 
 			printf("powering down in 5 seconds\n");
 			show_low_battery_logo();
-			memset(0x30370038, 0x60, 1);
+			memset((void *)0x30370038, 0x60, 1);
 		}
 
 		else {
