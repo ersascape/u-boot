@@ -5,6 +5,7 @@
  * SPDX-License-Identifier:     GPL-2.0+
  */
 #include <linux/delay.h>
+#include <dm.h>
 
 #ifndef __BQ27XXX_FG_H_
 #define __BQ27XXX_FG_H_
